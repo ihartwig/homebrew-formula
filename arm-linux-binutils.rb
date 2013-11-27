@@ -17,7 +17,7 @@ class ArmLinuxBinutils < Formula
       system '../configure', '--disable-nls', '--target=arm-linux-uclibc',
                              '--enable-gold=yes',
                              "--prefix=#{prefix}"
-      system 'make all'
+      system 'make all -v'
       system 'make install'
       FileUtils.mv lib, libexec
     end
