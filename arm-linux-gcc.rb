@@ -4,7 +4,7 @@ class ArmLinuxGcc < Formula
   homepage 'http://gcc.gnu.org'
   url 'http://ftpmirror.gnu.org/gcc/gcc-4.1.1/gcc-4.1.1.tar.bz2'
   mirror 'http://ftp.gnu.org/gnu/gcc/gcc-4.1.1/gcc-4.1.1.tar.bz2'
-  # sha1 'a464ba0f26eef24c29bcd1e7489421117fb9ee35'
+  sha1 '0f5c10d155d7ef67c5eb1261f84e70e2b92293fa'
 
   depends_on 'gmp'
   depends_on 'libmpc'
@@ -37,11 +37,11 @@ class ArmLinuxGcc < Formula
                              "--with-cpu=xscale",
                              "--with-arch=armv5te",
                              "--with-tune=xscale"
-      system 'make all-gcc'
-      system 'make install-gcc'
+      system 'make all-gcc -v'
+      system 'make install-gcc -v'
       FileUtils.ln_sf binutils.prefix/"arm-linux", prefix/"arm-linux"
-      system 'make all-target-libgcc'
-      system 'make install-target-libgcc'
+      system 'make all-target-libgcc -v'
+      system 'make install-target-libgcc -v'
       FileUtils.rm_rf share/"man"/"man7"
     end
   end
