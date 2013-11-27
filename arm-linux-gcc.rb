@@ -2,8 +2,8 @@ require 'formula'
 
 class ArmLinuxGcc < Formula
   homepage 'http://gcc.gnu.org'
-  url 'http://ftpmirror.gnu.org/gcc/gcc-4.7.2/gcc-4.7.2.tar.bz2'
-  mirror 'http://ftp.gnu.org/gnu/gcc/gcc-4.7.2/gcc-4.7.2.tar.bz2'
+  url 'http://ftpmirror.gnu.org/gcc/gcc-4.1.1/gcc-4.1.1.tar.bz2'
+  mirror 'http://ftp.gnu.org/gnu/gcc/gcc-4.1.1/gcc-4.1.1.tar.bz2'
   sha1 'a464ba0f26eef24c29bcd1e7489421117fb9ee35'
 
   depends_on 'gmp'
@@ -22,8 +22,8 @@ class ArmLinuxGcc < Formula
 
     mkdir 'build' do
       system '../configure', "--prefix=#{prefix}",
-                             "--build=i386-pc-linux-gnu",
-                             "--host=i386-pc-linux-gnu",
+                             "--build=x86_64-pc-linux-gnu",
+                             "--host=x86_64-pc-linux-gnu",
                              "--target=arm-linux-uclibc",
                              "--enable-languages=c",
                              "--enable-shared",
