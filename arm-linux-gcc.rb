@@ -4,7 +4,7 @@ class ArmLinuxGcc < Formula
   homepage 'http://gcc.gnu.org'
   url 'http://ftpmirror.gnu.org/gcc/gcc-4.1.1/gcc-4.1.1.tar.bz2'
   mirror 'http://ftp.gnu.org/gnu/gcc/gcc-4.1.1/gcc-4.1.1.tar.bz2'
-  sha1 'a464ba0f26eef24c29bcd1e7489421117fb9ee35'
+  # sha1 'a464ba0f26eef24c29bcd1e7489421117fb9ee35'
 
   depends_on 'gmp'
   depends_on 'libmpc'
