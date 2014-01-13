@@ -4,7 +4,7 @@ class AvrBinutils < Formula
   url 'http://ftpmirror.gnu.org/binutils/binutils-2.23.2.tar.bz2'
   mirror 'http://ftp.gnu.org/gun/binutils/binutils-2.23.2.tar.bz2'
   homepage 'http://www.gnu.org/software/binutils/binutils.html'
-  # sha1 '587fca86f6c85949576f4536a90a3c76ffc1a3e1'
+  sha1 '042c51073205ebaf88c272d6168f9deb71984b56'
 
   option 'disable-libbfd', 'Disable installation of libbfd.'
 
